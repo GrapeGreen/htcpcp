@@ -35,7 +35,6 @@
 
 3.
 
-        http
         BREW /tea HTCPCP/1.0
         Host: localhost
 
@@ -48,7 +47,6 @@
 
 4.
 
-        http
         WHEN /tea HTCPCP/1.0
         Host: localhost
 
