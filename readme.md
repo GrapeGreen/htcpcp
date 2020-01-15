@@ -12,53 +12,47 @@
 
 1.
 
-    ```http
-    BREW /coffee HTCPCP/1.0
-    Host: localhost
+        BREW /coffee HTCPCP/1.0
+        Host: localhost
 
-    start
+        start
 
-    HTCPCP/1.0 418 I'm a teapot
-    ```
-
+        HTCPCP/1.0 418 I'm a teapot
+   
 2.
 
-    ```http
-    BREW /tea HTCPCP/1.0
-    Host: localhost
-    Accept-Additions: milk;sugar
+        BREW /tea HTCPCP/1.0
+        Host: localhost
+        Accept-Additions: milk;sugar
 
-    start
+        start
 
-    HTCPCP/1.0 202 Accepted
-    Content-Type: message/teapot
+        HTCPCP/1.0 202 Accepted
+        Content-Type: message/teapot
 
-    Your tea is being brewed with the following additions: milk, sugar.
-    Come back in 10 seconds!
-    ```
+        Your tea is being brewed with the following additions: milk, sugar.
+        Come back in 10 seconds!
 
 3.
 
-    ```http
-    BREW /tea HTCPCP/1.0
-    Host: localhost
+        http
+        BREW /tea HTCPCP/1.0
+        Host: localhost
 
-    stop
+        stop
 
-    HTCPCP/1.0 201 Created
-    Content-Type: message/teapot
+        HTCPCP/1.0 201 Created
+        Content-Type: message/teapot
 
-    Finished brewing you tea. Come and collect it!
-    ```
+        Finished brewing you tea. Come and collect it!
 
 4.
 
-    ```http
-    WHEN /tea HTCPCP/1.0
-    Host: localhost
+        http
+        WHEN /tea HTCPCP/1.0
+        Host: localhost
 
-    HTCPCP/1.0 200 OK
-    Content-Type: message/teapot
+        HTCPCP/1.0 200 OK
+        Content-Type: message/teapot
 
-    Your tea is ready.
-    ```
+        Your tea is ready.
